@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<script>
+
+    // decisiones
+
+// ejercicio 0
+
+let enchufe = false;
+enchufe ? console.log("encendido") : console.log("apagado");
+
+// ejercicio 1
+
+let edad= 9; 
+edad >= 18 ? console.log("es mayor de edad") : console.log("es menor de edad");
+
+// ejercicio 2
+
+let numero = -3;
+numero > 0 ? console.log("numero positivo") : console.log("numero negativo");
+
+// ejercicio 3 
+
+let ocupacion_cancha = true;
+let nombre_cancha = "centenario";
+
+let mensaje= ocupacion_cancha ? `la cancha llamada ${nombre_cancha} esta ocdupada` : `la cancha llamada ${nombre_cancha} esta disponible`;
+console.log(mensaje);
+
+// ejercicio 4
+
+const email = "jjnaranjo_38@cue.edu.co";
+const contraseña = "123"
+
+email == "jjnaranjo_38@cue.edu.co" && contraseña == "123" ? console.log(`señor usuario con correo electronico ${email} Bienbenido`) : console.log(`el correo ${email} o la contraseña digitada es incorrecta`);
+
+// ejercicio 5
+
+let color_semaforo = "amarillo";
+color_semaforo == "verde" ? console.log(`el semafor esta en ${color_semaforo} puede seguir`) : color_semaforo == "rojo" ? console.log(`el semafor esta en ${color_semaforo} debe parar`) : color_semaforo == "amarillo" ? console.log("atencion") : console.log(`${color_semaforo}, no conside`);
+
+
+    // declaraciones con if
+
+// ejercicio 1
+
+let temperatura = 40;
+if(temperatura >=40){
+    console.log(`tiene fiebre, su temperatura es mayor a ${temperatura}`);
+}else if(temperatura = 38){
+    console.log(`su temperatura es ${temperatura}, y es normal`);
+}
+
+// ejercicio 2
+
+let tipo_cliente = "normal";
+if(tipo_cliente == "normal"){
+    console.log(`sera atendido en el modulo 1 por ser cliente ${tipo_cliente}`);
+}else if(tipo_cliente == "preferencial"){
+    console.log("esta avilitado los modulos 1 y2");
+}else{
+    cosole.log("usted no pertenece al banco");
+}
+
+// ejercicio 3
+
+let email_base_datos = "jjnaranjo_38@cue.edu.co";
+let clave_base_datos = "123";
+let email_ingresado = "jjnaranjo_38@cue.edu.co";
+let clave_ingresada = "123";
+let nombre_usuario = "Juan"
+
+if(email_base_datos == email_ingresado && clave_base_datos == clave_ingresada){    
+    cosole.log(`${nombre_usuario} bienvenido`);
+    }else{ cosole.log("acceso denegado"); 
+}
+
+// ejercicio 4
+
+let derecha = true;
+let izquierda = false;
+let arriba = false;
+let abajo = false;
+
+if(dereca){
+    console.long("robot moviendose a la derecha");
+}else if(izquierda){
+    console.log("robot moviendose hacia la izquierda"); 
+}else if(arriba){ 
+    console.log("robot moviendose hacia arriba");
+}else if(abajo){
+    console.log("robot moviendose hacia abajo");
+}else{
+console.log("movimiento extrafio");
+} 
+
+// ejercicio 5
+
+let encendido = true;
+let velocidad = 32; 
+
+if(encendido) {
+    console.log("Su carro esta encendido");
+if(velocidad == 0){
+    console.log("carro freno");
+}else if(velocidad > 0 && velocidad <= 100){ 
+console.log("carro en marcha")
+}else{ 
+console.log("evitese un accidente exceso de velocidad")
+}
+}else{
+console.log("Encienda su vehiculo");
+}
+
+// ejercicio 6
+
+let dia = "miercoles";
+let clase = "Algoritmos"; 
+
+if(dia == "miercoles"){
+console.log(`la clase de hoy es ${clase}`); 
+}
+
+
+
+</script>
+
+</body>
+</html>
